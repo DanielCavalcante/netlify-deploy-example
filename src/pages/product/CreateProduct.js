@@ -17,7 +17,7 @@ const CreateProduct = () => {
             preco: preco 
         }
         const resposta = await axios.post('http://localhost:3001/produtos', produto)
-        if (resposta.status == 200) {
+        if (resposta.status === 200) {
             navigate("/products");
         }
     }
